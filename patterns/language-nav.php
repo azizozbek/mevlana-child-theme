@@ -26,6 +26,9 @@ if (!$all_items) {
     return;
 }
 
+usort($all_items, fn($a, $b) => $a->menu_order - $b->menu_order);
+
+
 // 5. Build a parent→children map ----------------------------------------------
 //    $tree[0]         = top-level items (menu_item_parent === '0')
 //    $tree[$parent_id] = direct children of $parent_id
