@@ -54,7 +54,9 @@ function mytheme_get_pattern_content(string $pattern_name): string {
 
     ob_start();
     include $file;
-    return ob_get_clean();
+    $content = ob_get_clean();
+
+    return do_blocks($content);
 }
 
 
