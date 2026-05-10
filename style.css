@@ -9,3 +9,7 @@ Author URI:  https://azizozbek.ch
 */
 
 .popup-builder-content-credit {display:none !important}
+
+.wp-block-polylang-language-switcher select {
+    padding: 10px
+}
